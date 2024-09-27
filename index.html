@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人ポートフォリオ</title>
+    <!-- 外部CSSファイルのリンク -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fontsの読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダーセクション -->
+    <header>
+        <h1>あなたの名前</h1>
+        <p>職種 | スキル | 趣味</p>
+    </header>
+
+    <!-- ナビゲーションメニュー -->
+    <nav>
+        <ul>
+            <li><a href="#about">自己紹介</a></li>
+            <li><a href="#skills">スキル</a></li>
+            <li><a href="#projects">プロジェクト</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="container">
+        <!-- 自己紹介セクション -->
+        <section id="about">
+            <h2>自己紹介</h2>
+            <p>ここに自己紹介文を記載します。あなたのバックグラウンドや興味について書いてください。</p>
+        </section>
+
+        <!-- スキルセクション -->
+        <section id="skills">
+            <h2>スキル</h2>
+            <ul class="skills-grid">
+                <!-- 各スキルカード -->
+                <li class="skill-card">
+                    <h3>HTML</h3>
+                    <p>基本的なHTML5構造の理解と、セマンティックなタグの適切な使用ができます。</p>
+                </li>
+                <li class="skill-card">
+                    <h3>CSS</h3>
+                    <p>レスポンシブデザインの基本とFlexboxを使用したレイアウト作成ができます。</p>
+                </li>
+                <li class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>DOM操作、イベントハンドリング、基本的な非同期処理（Fetch API）の使用経験があります。</p>
+                </li>
+                <li class="skill-card">
+                    <h3>React基礎</h3>
+                    <p>コンポーネントの作成、プロップスとステートの基本的な使用ができます。</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- プロジェクトセクション -->
+        <section id="projects">
+            <h2>プロジェクト</h2>
+            <div class="project-grid">
+                <!-- 各プロジェクトカード -->
+                <article class="project-card">
+                    <h3>タスク管理アプリ</h3>
+                    <p class="project-summary">シンプルなToDo管理アプリケーション</p>
+                    <p class="project-details">HTML、CSS、JavaScriptを使用して、タスクの追加、削除、完了のマークができる基本的なタスク管理アプリを作成しました。ローカルストレージを使用してデータを保存する機能も実装しています。</p>
+                    <a href="https://github.com/yourusername/todo-app" target="_blank" class="btn github-btn">GitHubで見る</a>
+                </article>
+                <article class="project-card">
+                    <h3>天気予報ウィジェット</h3>
+                    <p class="project-summary">現在の天気と簡単な予報を表示するウィジェット</p>
+                    <p class="project-details">OpenWeatherMap APIを利用し、ユーザーの位置情報に基づいて現在の天気と3日間の簡単な予報を表示するウィジェットを開発しました。JavaScriptのFetch APIを使用してデータを取得し、動的にDOMを更新しています。</p>
+                    <a href="https://github.com/yourusername/weather-widget" target="_blank" class="btn github-btn">GitHubで見る</a>
+                </article>
+                <article class="project-card">
+                    <h3>シンプルなブログサイト</h3>
+                    <p class="project-summary">静的なブログサイトのデザインと実装</p>
+                    <p class="project-details">HTML、CSS、少量のJavaScriptを使用して、レスポンシブデザインのブログサイトを作成しました。記事一覧ページと個別記事ページのレイアウトを実装し、モバイルファーストのアプローチでデザインしています。</p>
+                    <a href="https://github.com/yourusername/simple-blog" target="_blank" class="btn github-btn">GitHubで見る</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- お問い合わせセクション -->
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="お名前" required>
+                <input type="email" placeholder="メールアドレス" required>
+                <textarea placeholder="メッセージ" required></textarea>
+                <button type="submit">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> あなたの名前 | All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScriptファイルの読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
