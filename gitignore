@@ -1,0 +1,36 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+*.swp
+*.swo
+
+# Dependency directories
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Backup files
+*.bak
+
+# Temporary files
+*.tmp
+
+# Keep index.html tracked
+!index.html
+
+# Keep styles.css tracked
+!styles.css
+
+# Keep script.js tracked
+!script.js
